@@ -8,17 +8,29 @@
 }
 
 .app_header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: white;
   padding: 14px;
   border-bottom: 1px solid #dbdbdb;
   object-fit: contain;
+  display: flex;
+  justify-content: space-between;
 }
 
 .app_headerImage {
   height: 29px;
+  /* object-fit: contain; */
 }
 
 .app__signup {
   display: flex;
   flex-direction: column;
+}
+
+.app__posts {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
