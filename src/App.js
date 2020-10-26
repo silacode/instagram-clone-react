@@ -183,11 +183,17 @@ function App() {
       {/* <h1>Hello World</h1> */}
 
       {/* Image Upload */}
-      {user?.displayName ? (
+      {!user ? (
+        <h3>Sorry you need to login</h3>
+      ) : (
+        <ImageUpload username={user.displayName} />
+      )}
+
+      {/* {user?.displayName ? (
         <ImageUpload username={user.displayName} />
       ) : (
         <h3>Sorry you need to login</h3>
-      )}
+      )} */}
 
       <div className="app__posts">
         <div className="app__postsleft">
